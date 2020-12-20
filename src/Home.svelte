@@ -1,19 +1,21 @@
 <script>
-    import { SIGTERM } from 'constants';
-import NavBar from './globalSite/NavBar.svelte'
+    import NavBar from './globalSite/NavBar.svelte'
+    import Footer from './globalSite/Footer.svelte'
 </script>
 
 <main>
     <NavBar current='none' />
 
     <div id="parrallax" class="content"><p>ask.cr</p></div>
-    <div class="content-light"><h2>BY DEVELOPERS, FOR DEVELOPERS</h2></div>
+    <div class="content"><h2>BY DEVELOPERS, FOR DEVELOPERS</h2></div>
     <div class="content"><h2>HAVE A QUESTION REGARDING A CRYSTAL FRAMWORK?<br>
                              HAVEN'T FOUND DECISIVE HELP ON OTHER SITES?<br>
                              READY TO GIVE UP?</h2></div>
     <div class="content"><h2>CHECK OUT ASK.CR! A COMMUNITY QUESTION-AND-ANSWER<br>
                              SITE SPECIFICALLY FOR CRYSTAL, YOU ARE SURE TO<br>
                              FIND AN ANSWER HERE!</h2></div>
+
+    <Footer />
 </main>
 
 <style>
@@ -46,19 +48,10 @@ import NavBar from './globalSite/NavBar.svelte'
     .content {
         text-align: center;
         font-size: 60px;
-        background: #eee;
-        color: black;
+        background: rgb(63, 76, 95);
+        color: #eee;
         padding: 8px 24px;
         /* border-radius: 16px; */
-    }
-
-    .content-light {
-        color: #eee;
-    }
-
-    div:nth-child(1) {
-        background-color: rgb(45, 45, 45);
-        background-size: cover;
     }
 
     div:nth-child(2) {
@@ -72,6 +65,6 @@ import NavBar from './globalSite/NavBar.svelte'
     }
 
     div:nth-child(4) {
-        background: aquamarine;
+        background: rgb(49, 58, 71);
     }
 </style>

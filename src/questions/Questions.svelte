@@ -1,6 +1,7 @@
 <script>
     import NavBar from '../globalSite/NavBar.svelte'
     import SideBar from '../globalSite/SideBar.svelte'
+    import Footer from '../globalSite/Footer.svelte'
 
     let questions = [
         {title: 'Why isn\'t it working?', tags: ['tags', 'just why', 'no context!!!'], content: 'I\'m sorry I can\'t give you code, but it isn\'t working! HELP!!!'},
@@ -29,7 +30,7 @@
                 <div>
                     <div class="title">
                         <h4>
-                            <a href="#">{question.title}</a>
+                            <a href="/questions">{question.title}</a>
                         </h4>
                     </div>
                     {#each question.tags as tag}
@@ -44,6 +45,8 @@
 
         <SideBar />
     </div>
+
+    <Footer />
 </main>
 
 <style>
@@ -52,7 +55,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color:rgb(45, 45, 45);
     }
 

@@ -19,15 +19,15 @@
                     <a class="nav-link {current === 'Profile' ? 'active' : ''}" href="/profile">Profile</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Actions
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Ask a question</a>
-                        <a class="dropdown-item" href="#">See answered questions</a>
+                        <a class="dropdown-item" href="/">Ask a question</a>
+                        <a class="dropdown-item" href="/">See answered questions</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Contact us!</a>
+                        <a class="dropdown-item" href="/">Contact us!</a>
                     </div>
                 </li>
             </ul>
@@ -59,10 +59,5 @@
     .dropdown-item:hover {
         background: lightgray;
         color: black
-    }
-
-    .form-control {
-        background-color: darkslategray;
-        border: none;
     }
 </style>
