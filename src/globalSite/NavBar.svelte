@@ -42,9 +42,9 @@
 
 <style>
     nav {
-        padding-left: 22%;
+        padding-left: 18%;
         padding-right: 22%;
-        margin-bottom: 30px;
+        margin-bottom: 30px; 
         background: grey !important;
     }
 

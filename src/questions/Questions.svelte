@@ -1,5 +1,6 @@
 <script>
     import NavBar from '../globalSite/NavBar.svelte'
+    import SideBar from '../globalSite/SideBar.svelte'
 
     let questions = [
         {title: 'Why isn\'t it working?', tags: ['tags', 'just why', 'no context!!!'], content: 'I\'m sorry I can\'t give you code, but it isn\'t working! HELP!!!'},
@@ -19,6 +20,9 @@
     </h3>
 
     <div class="float-container">
+        <div class="the-great-all-knowing-container">
+
+        </div>
         <div class="questions a-child-afloat">
             {#each questions as question}
                 <hr>
@@ -38,16 +42,7 @@
             {/each}
         </div>
 
-        <div class="a-child-afloat sidebar">
-            <div class="sidebar-title">
-                <h5>The Crystal Blog</h5>
-            </div>
-            <p>Content</p>
-            <p>More Content</p>
-            <h5>Featured</h5>
-            <p>Content</p>
-            <p>More Content</p>
-        </div>
+        <SideBar />
     </div>
 </main>
 
@@ -62,33 +57,32 @@
     }
 
     .float-container {
-        padding: 20px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    /* container is reserved by bootstrap */
+    .the-great-all-knowing-container {
+        margin: auto;
     }
 
     .questions-title {
+        font-weight: 200 !important;
         font-size: 2.1em;
         color: white;
-        margin-left: 23%;
-        margin-bottom: 20px;
+        margin-left: 20%;
+        margin-bottom: 0px;
     }
 
     .questions {
-        width: 30% !important;
+        width: 40% !important;
         float: left;
         padding: 20px;
         width: 100%;
-        margin-left: 21%;
-    }
-
-    .sidebar {
-        color: white;
-        background-color: rgb(49, 58, 71);
-        border-radius: 10px;
-    }
-
-    .sidebar-title {
-        background-color: rgb(55, 66, 82);
-        display: inline-block; 
+        margin-left: 17%;
+        height: 79vh;
+        overflow: auto;
+        /* overflow: hidden; */
     }
 
     .a-child-afloat {

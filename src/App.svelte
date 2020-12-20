@@ -19,7 +19,7 @@
 	// Set page variable
 	let page
 	let params
-
+ 
 	// Set up pages to watch for
 	router('/', () => page = Home)
 	router('/signup', () => page = Signup)
