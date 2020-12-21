@@ -21,9 +21,6 @@
     </h3>
 
     <div class="float-container">
-        <div class="the-great-all-knowing-container">
-
-        </div>
         <div class="questions a-child-afloat">
             {#each questions as question}
                 <hr>
@@ -62,11 +59,6 @@
     .float-container {
         overflow: hidden;
         width: 100%;
-    }
-
-    /* container is reserved by bootstrap */
-    .the-great-all-knowing-container {
-        margin: auto;
     }
 
     .questions-title {

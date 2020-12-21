@@ -50,17 +50,16 @@
                 },
             });
         });
-    }, 1000)
+    }, 50)
 </script>
 
 <main>
     <div class="page">
         <div class="container">
             <div class="left">
-                <div class="login">Login</div>
+                <div class="login">Signup</div>
                 <div class="eula">
-                    By logging in you agree to the ridiculously long terms that
-                    you didn't bother to read
+                    Signup to ask and answer questions
                 </div>
             </div>
             <div class="right">
@@ -113,7 +112,7 @@
         background: #2d2f36;
     }
     .page {
-        background: #e2e2e5;
+        background: rgb(45, 45, 45);
         display: flex;
         flex-direction: column;
         height: calc(100% - 40px);
@@ -219,7 +218,7 @@
     }
     #submit {
         color: #707075;
-        margin-top: 18px;
+        margin-top: 36px;
         transition: color 300ms;
     }
     #submit:focus {

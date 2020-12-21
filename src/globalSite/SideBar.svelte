@@ -22,14 +22,16 @@
     <div class="sidebar a-child-afloat">
         <!-- The Crystal Blog - random blog posts and tips from Crystal devs -->
         <h5>The Crystal Blog</h5>
+        <hr>
         <div>
             {#each blog_content as blog}
                 <p><a href="{blog.permalink}">{blog.title}</a></p>
             {/each}
         </div>
 
-        <!-- Features posts - posts chosen as relevant by the mods -->
+        <!-- Featured posts - posts chosen as relevant by the mods -->
         <h5>Featured</h5>
+        <hr>
         <div>
             {#each featured_content as feat}
                 <p><a href="{feat.permalink}">{feat.title}</a></p>
@@ -38,6 +40,7 @@
 
         <!-- Posts with a lot of upvotes or answers -->
         <h5>Popular Posts</h5>
+        <hr>
         <div>
             {#each popular_content as pop}
                 <p><a href="{pop.permalink}">{pop.title}</a></p>
@@ -64,6 +67,7 @@
 
     h5 {
         margin-top: 25px;
+        text-align: center;
     }
 
     p {

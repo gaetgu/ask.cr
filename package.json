@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "editor.md": "^1.5.0",
     "page": "^1.11.6",
     "sirv-cli": "^1.0.0"
   }

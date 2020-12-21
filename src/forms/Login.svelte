@@ -50,7 +50,19 @@
                 },
             });
         });
-    }, 1000)
+    }, 50)
+
+    var Email
+    var Pass
+
+    setInterval(() => {
+        Email = document.getElementById('email').value
+        Pass = document.getElementById('password').value
+    }, 50)
+
+    const redirectLogin = (user, pass) => {
+        location.replace(`/api/users?user:email=${user}&user:password=${pass}`)
+    }
 </script>
 
 <main>
@@ -59,8 +71,7 @@
             <div class="left">
                 <div class="login">Login</div>
                 <div class="eula">
-                    By logging in you agree to the ridiculously long terms that
-                    you didn't bother to read
+                    Log in to ask and answer questions
                 </div>
             </div>
             <div class="right">
@@ -92,7 +103,7 @@
                     <input type="email" id="email" />
                     <label for="password">Password</label>
                     <input type="password" id="password" />
-                    <input type="submit" id="submit" value="Submit" />
+                    <input on:click={redirectLogin(Email, Pass)} type="submit" id="submit" value="Submit" />
                 </div>
             </div>
         </div>
@@ -110,8 +121,9 @@
     ::-moz-selection {
         background: #2d2f36;
     }
+
     .page {
-        background: #e2e2e5;
+        background: rgb(45, 45, 45);
         display: flex;
         flex-direction: column;
         height: calc(100% - 40px);
@@ -217,7 +229,7 @@
     }
     #submit {
         color: #707075;
-        margin-top: 18px;
+        margin-top: 36px;
         transition: color 300ms;
     }
     #submit:focus {

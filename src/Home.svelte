@@ -8,11 +8,11 @@
 
     <div id="parrallax" class="content"><p>ask.cr</p></div>
     <div class="content"><h2>BY DEVELOPERS, FOR DEVELOPERS</h2></div>
-    <div class="content"><h2>HAVE A QUESTION REGARDING A CRYSTAL FRAMWORK?<br>
+    <div class="content"><h2>HAVE A QUESTION REGARDING A CRYSTAL FRAMWORK?
                              HAVEN'T FOUND DECISIVE HELP ON OTHER SITES?<br>
                              READY TO GIVE UP?</h2></div>
-    <div class="content"><h2>CHECK OUT ASK.CR! A COMMUNITY QUESTION-AND-ANSWER<br>
-                             SITE SPECIFICALLY FOR CRYSTAL, YOU ARE SURE TO<br>
+    <div class="content"><h2>CHECK OUT ASK.CR! A COMMUNITY QUESTION-AND-ANSWER
+                             SITE SPECIFICALLY FOR CRYSTAL, YOU ARE SURE TO
                              FIND AN ANSWER HERE!</h2></div>
 
     <Footer />
@@ -51,6 +51,8 @@
         background: rgb(63, 76, 95);
         color: #eee;
         padding: 8px 24px;
+        padding-left: 20%;
+        padding-right: 20%;
         /* border-radius: 16px; */
     }
 
